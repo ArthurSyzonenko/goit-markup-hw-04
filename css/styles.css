@@ -299,22 +299,42 @@ body {
 .customer-base {
   display: flex;
 }
-.client {
+
+.client-icon {
   display: flex;
-  width: 170px;
-  height: 92px;
+  justify-self: center;
+  align-items: center;
+  fill: #afb1b8;
+}
+
+.client {
   margin-right: 30px;
   margin-top: 94px;
   padding-bottom: 94px;
-  border: 1px solid #afb1b8;
-  box-sizing: border-box;
-  border-radius: 4px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
 }
 
 .customer-link {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.customer-link:hover,
+.customer-link:focus {
+  border: 1px solid #2196f3;
+}
+
+.customer-link:hover .client-icon,
+.customer-link:focus .client-icon {
+  fill: #2196f3;
 }
 
 .footer {
@@ -378,6 +398,23 @@ body {
 .footer-contacts:hover,
 .footer-contacts:focus {
   color: var(--blue-color);
+}
+
+.container-connect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.connect {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
 }
 
 .hero-second {
